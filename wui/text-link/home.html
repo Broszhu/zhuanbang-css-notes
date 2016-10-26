@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>文字相关展示</title>
+    <link href="http://a.f265.com/wui/reset.css" rel="stylesheet" type="text/css" />
+    <!--<link href="http://a.taobao.fm/wui/text-link/css/text-link.css" rel="stylesheet" type="text/css" />-->
+    <link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/button/css/button.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="./css/text-link.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/codeprettify/prettify.css"/>
+    <script src="http://a.taobao.fm/assets/codeprettify/prettify.js"></script>
+    <script>
+        window.onload = function () {
+            prettyPrint();
+        };
+    </script>
+</head>
+<body id="page-demo">
+<div class="wui-module">
+    <div class="wui-module-head">
+        <h2 class="wui-module-title">
+            <a href="javascript:;" id="modules-button">文字相关的</a>
+        </h2>
+        <p class="wui-module-description">点击输入框，它的value值就会自动复制到剪切板</p>
+    </div>
+    <!--*******************************************************************************-->
+    <div class="wui-module-demo">
+        <h3 class="wui-module-subtitle">文字的颜色<span class="wui-form-other">支持p、a、span、b、H1等标签</span></h3>
+        <div class="wui-module-dom">
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-default">
+                <span class="wui-txt-default">wui-txt-default</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-info">
+                <span class="wui-txt-info">wui-txt-info</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-muted">
+                <span class="wui-txt-muted">wui-txt-muted</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-primary">
+                <span class="wui-txt-primary">wui-txt-primary</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-secondary">
+                <span class="wui-txt-secondary">wui-txt-secondary</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-purple">
+                <span class="wui-txt-purple">wui-txt-purple</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-success">
+                <span class="wui-txt-success">wui-txt-success</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-warning">
+                <span class="wui-txt-warning">wui-txt-warning</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-danger">
+                <span class="wui-txt-danger">wui-txt-danger</span>
+            </div>
+        </div>
+        <br/>
+        <h3 class="wui-module-subtitle">文字大小</h3>
+        <div class="wui-module-dom">
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-xxs">
+                <span class="wui-txt-muted wui-txt-xxs">
+                    <span class="wui-txt-xxs-item">这是一段文字 wui-txt-xxs</span>
+                </span>
+                <span class="wui-txt-muted wui-txt-xxs">
+                    <span class="wui-txt-xxs-item">用wui-txt-xxs的时候，需要创建一个子标签，类名是wui-txt-xxs-item，内容放在子标签内;一段文字最好占一行(解决chrome浏览器字体不低于12px的限制)</span>
+                </span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-xs">
+                <span class="wui-txt-muted wui-txt-xs">这是一段文字 wui-txt-xs</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-sm">
+                <span class="wui-txt-muted wui-txt-sm">这是一段文字 wui-txt-sm</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-lg">
+                <span class="wui-txt-muted wui-txt-lg">这是一段文字 wui-txt-lg</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-xl">
+                <span class="wui-txt-muted wui-txt-xl">这是一段文字 wui-txt-xl</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-xxl">
+                <span class="wui-txt-muted wui-txt-xxl">这是一段文字 wui-txt-xxl</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-xxxl">
+                <span class="wui-txt-muted wui-txt-xxxl">这是一段文字 wui-txt-xxxl</span>
+            </div>
+        </div>
+        <br/>
+        <h3 class="wui-module-subtitle">对齐方式</h3>
+        <div class="wui-module-dom">
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-tac">
+                <span class="wui-txt-muted wui-txt-tac">左对齐 text-align: center;</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-m copy-to-shear-board" type="text" value="wui-txt-tar">
+                <span class="wui-txt-muted wui-txt-tar">右对齐 text-align: right !important;</span>
+            </div>
+        </div>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    </div>
+    <!--*******************************************************************************-->
+</div>
+<!--Javascript引用-开始-->
+<script src="http://a.taobao.fm/lib/jquery/jquery-1.11.2.min.js"></script>
+<script src="../copy-to-shear-board.js"></script>
+<!--Javascript引用-结束-->
+</body>
+</html>

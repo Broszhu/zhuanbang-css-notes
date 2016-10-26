@@ -1,0 +1,74 @@
+/*文本及链接颜色*/
+.wui-txt-default {
+  color: #333333; }
+
+.wui-txt-info {
+  color: #808080; }
+
+.wui-txt-muted {
+  color: #a6a6a6; }
+
+.wui-txt-primary {
+  color: #0e90d2; }
+  .wui-txt-primary:visited {
+    color: #0e90d2; }
+
+.wui-txt-secondary {
+  color: #3bb4f2; }
+  .wui-txt-secondary:visited {
+    color: #3bb4f2; }
+.wui-txt-purple {
+  color: #9C80C9; }
+  .wui-txt-secondary:visited {
+    color: #9C80C9; }
+
+.wui-txt-success {
+  color: #5eb95e; }
+  .wui-txt-success:visited {
+    color: #5eb95e; }
+
+.wui-txt-warning {
+  color: #f37b1d; }
+  .wui-txt-warning:visited {
+    color: #f37b1d; }
+
+.wui-txt-danger {
+  color: #dd514c; }
+  .wui-txt-danger:visited {
+    color: #dd514c; }
+    
+a.wui-txt-decoration:hover {
+    text-decoration: underline;
+}
+/*字体大小*/
+.wui-txt-xxs {
+    font-size: 10px;
+    display: inline-block;
+}
+.wui-txt-xxs .wui-txt-xxs-item{
+    font-size: 12px;
+    transform: scale(0.8333);/*缩放，解决chrome浏览器字体不低于12px的限制*/
+    display: block;
+    transform-origin:0 88% 0;/*改变缩放基点*/
+}
+.wui-txt-xs {
+  font-size: 12px; }
+
+.wui-txt-sm {
+  font-size: 14px; }
+
+.wui-txt-lg {
+  font-size: 18px; }
+
+.wui-txt-xl {
+  font-size: 24px; }
+
+.wui-txt-xxl {
+  font-size: 32px; }
+
+.wui-txt-xxxl {
+  font-size: 48px; }
+.wui-txt-tar{
+  text-align: right !important;}
+.wui-txt-tac{
+  text-align: center;}
