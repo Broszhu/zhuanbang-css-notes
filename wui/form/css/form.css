@@ -68,7 +68,6 @@ input.wui-checkbox {  vertical-align: baseline; }
 .wui-form-item {  padding: 0 5px 20px 170px;  zoom: 1; }
 .wui-form-item .wui-button.wui-button-xl {  padding: 0 40px; }
 .wui-form-item .wui-button.wui-button-l {  padding: 0 40px; }
-
 .wui-form-item select {  vertical-align: middle;  margin: 4px 0 0; }
 .wui-form .wui-form-select {
   padding: 2px;
@@ -83,38 +82,18 @@ input.wui-checkbox {  vertical-align: baseline; }
   outline: 0;
   -webkit-transition: .05s border-color ease-in-out;
   transition: .05s border-color ease-in-out; }
-
 .wui-form .wui-form-select[disabled] {  border: 1px solid #ccc;  background: #f2f2f2; }
 .wui-form-item input {  vertical-align: middle; }
-
 .wui-form-item .wui-input {  color: #595959;  vertical-align: middle;  *vertical-align: -5px; }
-
-.wui-form-large .wui-input {
-  font-size: 14px;
-  height: 18px;
-  line-height: 18px;
-  padding: 11px 10px; }
-
-.wui-form-large .wui-input {
-  padding-top: 12px; }
-
-.wui-form.wui-form-vertical .wui-form-item {
-  padding: 0 5px 20px 0px; }
-.wui-form.wui-form-vertical .wui-form-item.wui-form-btncenter {
-  text-align: center; }
-.wui-form.wui-form-vertical .wui-label {
-  display: block;
-  float: none;
-  width: auto;
-  text-align: left;
-  margin-left: 0;
-  margin-bottom: 6px; }
-  .wui-form.wui-form-vertical .wui-label .wui-sub-label {
-    font-size: 12px;
-    color: #999999; }
-  .wui-form.wui-form-vertical .wui-label small {
-    margin-left: 10px;
-    color: #999999; }
+/**************** 大号的wui-input ******************/
+.wui-form-large .wui-input {  font-size: 14px;  height: 18px;  line-height: 18px;  padding: 11px 10px; }
+.wui-form-large .wui-input {  padding-top: 12px; }
+/**************** 垂直的表单 ******************/
+.wui-form.wui-form-vertical .wui-form-item {  padding: 0 5px 20px 0px; }
+.wui-form.wui-form-vertical .wui-form-item.wui-form-btncenter {  text-align: center; }
+.wui-form.wui-form-vertical .wui-label {  display: block;  float: none;  width: auto;  text-align: left; margin-left: 0;  margin-bottom: 6px; }
+.wui-form.wui-form-vertical .wui-label .wui-sub-label {  font-size: 12px;  color: #999999; }
+.wui-form.wui-form-vertical .wui-label small {  margin-left: 10px;  color: #999999; }
 
 .wui-form fieldset legend.fieldset-legend {
   display: block;
@@ -147,13 +126,9 @@ input.wui-checkbox {  vertical-align: baseline; }
 
 .wui-form fieldset legend.fieldset-legend .wui-form-sublegend {
   margin-left: 20px; }
-
-.wui-form .wui-form-group:not(:last-child) {
-  margin-bottom: 10px; }
-
-.wui-form .wui-form-group .wui-form-group-title {
-  background-color: #e7e7e7; }
-
+/**************** 表单的分组 ******************/
+.wui-form .wui-form-group:not(:last-child) {  margin-bottom: 10px; }
+.wui-form .wui-form-group .wui-form-group-title {  background-color: #e7e7e7; }
 .wui-form .wui-form-group-title label {
   display: block;
   height: 40px;
@@ -162,18 +137,10 @@ input.wui-checkbox {  vertical-align: baseline; }
   cursor: pointer;
   font-size: 14px;
   font-weight: 700; }
-
-.wui-form .wui-form-group-title label small {
-  margin-left: 10px;
-  color: #777777; }
-
-.wui-form .wui-form-group-con {
-  padding-left: 20px;
-  padding-top: 10px; }
-
-.wui-form .wui-form-item {
-  padding-bottom: 10px; }
-
+.wui-form .wui-form-group-title label small {  margin-left: 10px;  color: #777777; }
+.wui-form .wui-form-group-con {  padding-left: 20px;  padding-top: 10px; }
+/**************** 表单的包裹层 ******************/
+.wui-form .wui-form-item {  padding-bottom: 10px; }
 .wui-form-selector {
   padding: 2px;
   line-height: 32px;
@@ -188,9 +155,6 @@ input.wui-checkbox {  vertical-align: baseline; }
   transition: .05s border-color ease-in-out;
     cursor: pointer;
 }
-
-
-
 .wui-form .wui-form-select-m {
   padding: 2px;
   margin-top: 0px;
@@ -242,29 +206,8 @@ input.wui-checkbox {  vertical-align: baseline; }
 .wui-form-item-error .wui-form-explain {  color: #FF5243; }
 .wui-form-item-error .wui-form-explain .iconfont {  font-size: 16px; }
 .wui-form-item-error .wui-form-select {
-    padding: 2px;
-    line-height: 32px;
-    height: 32px;
-    vertical-align: middle;
-    border: 1px solid #f00;
-    -webkit-box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);
-    box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);
-    background-color: #ffeeee;
-    color: #32373c;
-    outline: 0;
-    -webkit-transition: .05s border-color ease-in-out;
-    transition: .05s border-color ease-in-out; }
+  padding: 2px;  line-height: 32px;  height: 32px;  vertical-align: middle;  border: 1px solid #f00;  -webkit-box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  background-color: #ffeeee;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
 .wui-form-item-error .wui-form-select-m {
-    padding: 2px;
-    line-height: 24px;
-    height: 24px;
-    vertical-align: middle;
-    border: 1px solid #f00;
-    -webkit-box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);
-    box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);
-    background-color: #ffeeee;
-    color: #32373c;
-    outline: 0;
-    -webkit-transition: .05s border-color ease-in-out;
-    transition: .05s border-color ease-in-out; }
+    padding: 2px;  line-height: 24px;  height: 24px;  vertical-align: middle;
+    border: 1px solid #f00;  -webkit-box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  box-shadow: inset 0 1px 2px rgba(255, 0, 0, 0.07);  background-color: #ffeeee;  color: #32373c;  outline: 0;  -webkit-transition: .05s border-color ease-in-out;  transition: .05s border-color ease-in-out; }
 

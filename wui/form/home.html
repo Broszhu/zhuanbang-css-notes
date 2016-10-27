@@ -363,13 +363,13 @@
             <br/>
             <br/>
             <div class="wui-form-item wui-form-item-hover">
-                <label for="" class="wui-label">wui-form-item-focus</label>
+                <label for="" class="wui-label">wui-form-item-hover</label>
                 <div>
-                    <input type="text" class="wui-input"/>
+                    <input type="text" class="wui-input copy-to-shear-board" value="wui-form-item-hover"/>
                 </div>
                 <br/>
                 <div>
-                    <textarea name="" id="" cols="300" rows="10" class="wui-textarea"></textarea>
+                    <textarea name="" id="" cols="300" rows="10" class="wui-textarea copy-to-shear-board">wui-form-item-hover</textarea>
                 </div>
                 <p class="wui-form-explain">wui-form-item-hover 放在wui-form-item 同级的标签上(wui-form-explain颜色也会改变的)</p>
             </div>
@@ -377,11 +377,11 @@
             <div class="wui-form-item wui-form-item-focus">
                 <label for="" class="wui-label">wui-form-item-focus</label>
                 <div>
-                    <input type="text" class="wui-input"/>
+                    <input type="text" class="wui-input copy-to-shear-board" value="wui-form-item-focus"/>
                 </div>
                 <br/>
                 <div>
-                    <textarea name="" id="" cols="300" rows="10" class="wui-textarea"></textarea>
+                    <textarea name="" id="" cols="300" rows="10" class="wui-textarea copy-to-shear-board" >wui-form-item-focus </textarea>
                 </div>
                 <p class="wui-form-explain">wui-form-item-focus 放在wui-form-item 同级的标签上</p>
             </div>
@@ -389,9 +389,9 @@
 
             <form class="wui-form" name="" method="post" action="#" id="">
                 <div class="wui-form-item wui-form-detaillist">
-                    <label for="" class="wui-label">wui-form-detaillist</label>
+                    <label for="" class="wui-label ">wui-form-detaillist</label>
                     <div>
-                        <input type="text" class="wui-input"/>
+                        <input type="text" class="wui-input copy-to-shear-board" value="wui-form-detaillist"/>
                     </div>
                     <p class="wui-form-explain">wui-form-detaillist 放在wui-form-item 同级的标签上,改变wui-label的字体颜色;如果要改变字体的大小,直接放在wui-form上,字体14px（默认是12px）</p>
                 </div>
@@ -400,10 +400,33 @@
             <br/>
         </div>
         <br/><br/><br/><br/>
+
+        <br/><br/>
+    </div>
+
+    <div class="wui-module-demo">
         <h3 class="wui-module-subtitle">表单错误的相关的效果（把 wui-form-item-error 放在wui-form-item同级）</h3>
         <div class="wui-form-item wui-form-item-error">
             <label for="" class="wui-label">下拉选择</label>
-            <select id="province" name="province" class="wui-form-selector wui-form-select">
+            <select id="province" name="province" class=" wui-form-select">
+                <option value="" >
+                    请选择
+                </option>
+                <option value="北京" >
+                    北京
+                </option>
+                <option value="上海" >
+                    上海
+                </option>
+                <option value="天津" >
+                    天津
+                </option>
+                <option value="浙江" >
+                    浙江
+                </option>
+            </select>
+
+            <select id="province" name="province" class="wui-form-selector wui-form-select-m">
                 <option value="" >
                     请选择
                 </option>
@@ -424,8 +447,24 @@
             <p class="wui-form-explain">更多地区即将开通，敬请期待。</p>
         </div>
 
-        <br/><br/>
+        <div class="wui-form-item wui-form-item-error">
+            <input type="text" class="wui-input copy-to-shear-board" value="wui-form-item-error"/>
+            <br/><br/>
+            <textarea class="wui-textarea copy-to-shear-board">wui-form-item-error </textarea>
+            <br/><br/>
+            <input type="button" class="wui-input wui-input-reset " value="错误的按钮"/>
+            <br/><br/>
+            <span class="wui-form-explain">这是一行说明文字。class="wui-form-explain"</span>
+        </div>
     </div>
+
+    <div class="wui-module-demo">
+        <h3 class="wui-module-subtitle">大号input的效果 （把 wui-form-large 放在wui-form-item同级）</h3>
+        <div class="wui-form-item wui-form-large wui-form-item-error">
+            <input type="text" class="wui-input copy-to-shear-board" value="wui-form-large"/>
+        </div>
+    </div>
+
     <!--*******************************************************************************-->
 </div>
 <!--需要的属性-->
