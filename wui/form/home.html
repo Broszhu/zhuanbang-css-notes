@@ -5,8 +5,10 @@
     <title>表单相关</title>
     <link href="http://a.f265.com/wui/reset.css" rel="stylesheet" type="text/css" />
     <link href="http://a.taobao.fm/wui/text-link/css/text-link.css" rel="stylesheet" type="text/css" />
-    <link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />
+    <!--<link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />-->
     <link href="http://a.taobao.fm/wui/button/css/button.css" rel="stylesheet" type="text/css" />
+
+    <link href="./css/form.css" rel="stylesheet" type="text/css" />
 
 
     <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
@@ -58,7 +60,7 @@
         </div>
 
         <br/><br/><br/><br/>
-        <h3 class="wui-module-subtitle">相关的文字</h3>
+        <h3 class="wui-module-subtitle">基础的键值对样式</h3>
         <div class="wui-module-dom">
             <form class="wui-form" name="" method="post" action="#">
                 <fieldset>
@@ -69,16 +71,16 @@
                             表单项：
                         </label>
                         <p class="wui-form-text">表单项对应的内容</p>
-                        <p class="wui-form-explain">单独一行的注释文字。</p>
+                        <!--<p class="wui-form-explain">单独一行的注释文字。</p>
                         <input class="wui-input copy-to-shear-board" type="text" value='<span class="wui-form-other ">在input后面的注释文字,</span>'>
-                        <span class="wui-form-other ">在input后面的注释文字,</span>
+                        <span class="wui-form-other ">在input后面的注释文字,</span>-->
                     </div>
                 </fieldset>
             </form>
             <br/>
             <div>
                 <input class="wui-input wui-input-xxxl copy-to-shear-board" type="text" value='<label for="" class="wui-label">表单项</label>'>
-                <p class="wui-form-text">表单项</p>
+                <p class="wui-form-text">表单项的键</p>
             </div>
             <div>
                 <input class="wui-input wui-input-xxxl copy-to-shear-board" type="text" value='<span class="wui-form-required">*</span>'>
@@ -86,16 +88,21 @@
             </div>
             <div>
                 <input class="wui-input wui-input-xxxl copy-to-shear-board" type="text" value='<p class="wui-form-text">表单项对应的内容</p>'>
-                <p class="wui-form-text">表单项对应的内容</p>
+                <p class="wui-form-text">表单项的文本值</p>
             </div>
             <br/>
-            <p class="wui-form-explain">单独一行的注释文字。</p>
+            <h3 class="wui-module-subtitle">不同场景的文字</h3>
             <div>
-                <input class="wui-input wui-input-xxxl copy-to-shear-board" type="text" value='<p class="wui-form-explain">单独一行的注释文字。</p>'>
+                <input class="wui-input wui-input-xxxl copy-to-shear-board" type="text" value='<span class="wui-form-explain">这是一行说明文字。</span>'>
+                <p class="wui-form-explain">这是一行说明文字, padding: 0 0 8px;（可以放在input下方，做说明）【DIY】</p>
             </div>
             <div>
-                <input class="wui-input wui-input-xxxl copy-to-shear-board" type="text" value='<span class="wui-form-other ">在input后面的注释文字,</span>'>
-                <span class="wui-form-other">在input后面的注释文字</span>
+                <input class="wui-input wui-input-xxxl copy-to-shear-board" type="text" value='<span class="wui-form-other ">这是一行补充文字</span>'>
+                <span class="wui-form-other">这是一行补充文字（一般用在input后面的注释文字）</span>
+            </div>
+            <div>
+                <p class="wui-form-prompt">这是一行提示文字，padding: 8px 0 0; (可以放在input上方，做提示)</p>
+                <input class="wui-input wui-input-xxxl copy-to-shear-board" type="text" value='<span class="wui-form-prompt">这是一行提示文字。</span>'>
             </div>
         </div>
 
@@ -120,7 +127,7 @@
                 <span class="wui-txt-info">wui-input-sm</span>
             </div>
             <div>
-                <input class="wui-input wui-input-mm copy-to-shear-board" type="text" value='<input class="wui-input wui-input-mm " type="text" name="" value="">'>
+                <input class="wui-input wui-input-mm copy-to-shear-board " type="text" value='<input class="wui-input wui-input-mm " type="text" name="" value="">'>
                 <span class="wui-txt-info">wui-input-mm</span>
             </div>
             <div>
@@ -129,8 +136,12 @@
             </div>
             <br/>
             <div>
-                <input class="wui-input copy-to-shear-board" type="text" value='<input class="wui-input " type="text" name="" value="">'>
+                <input class="wui-input copy-to-shear-board " type="text" value='<input class="wui-input " type="text" name="" value="">'>
                 <span class="wui-txt-danger">默认的</span>
+            </div>
+            <div>
+                <input class="wui-input wui-input-s copy-to-shear-board" type="text" value='<input class="wui-input wui-input-s " type="text" name="" value="">'>
+                <span class="wui-txt-info">相比其它的input，这个属性可以把上下padding改小一些</span>
             </div>
             <br/>
             <div>
@@ -151,9 +162,70 @@
             </div>
             <br/>
             <div>
+                <input class="wui-input wui-input-xxxl " type="text" disabled value='<input class="wui-input" type="text" disabled>'>
+                <span class="wui-txt-info">禁用的显示,直接加 disabled 即可；</span>
+            </div>
+            <div>
+                <br/>
+                <input class="wui-input wui-input-xxxl " type="text" readonly value='<input class="wui-input" type="text" dreadonlyd>'>
+                <span class="wui-txt-info">只读的显示,直接加 dreadonlyd 即可；</span>
+            </div>
+            <div>
+                <br/>
+                <input class="wui-input placeholder wui-input-xxxl copy-to-shear-board" type="text" value='<input class="wui-input placeholder" type="text">'>
+                <span class="wui-txt-info">placeholder,加 placeholder 的class名即可；</span>
+            </div>
+        </div>
+        <br/><br/><br/><br/>
+        <div>
+            <h3 class="wui-module-subtitle">文本区的长度类名</h3>
+            <div>
                 <textarea class="wui-textarea copy-to-shear-board">
 <textarea class="wui-textarea" name=""></textarea>
 </textarea>
+                <span class="wui-txt-info">默认不需要输入</span>
+            </div>
+            <div>
+                <textarea class="wui-textarea wui-input-l copy-to-shear-board">
+<textarea class="wui-textarea wui-input-l" name=""></textarea>
+</textarea>
+                <span class="wui-txt-info">wui-input-l</span>
+            </div>
+            <div>
+                <textarea class="wui-textarea wui-input-xl copy-to-shear-board">
+<textarea class="wui-textarea wui-input-xl" name=""></textarea>
+</textarea>
+                <span class="wui-txt-info">wui-input-xl</span>
+            </div>
+            <div>
+                <textarea class="wui-textarea wui-input-xxl copy-to-shear-board">
+<textarea class="wui-textarea wui-input-xxl" name=""></textarea>
+</textarea>
+                <span class="wui-txt-info">wui-input-xxl</span>
+            </div>
+            <div>
+                <textarea class="wui-textarea wui-input-xxxl copy-to-shear-board">
+<textarea class="wui-textarea wui-input-xxxl" name=""></textarea>
+</textarea>
+                <span class="wui-txt-info">wui-input-xxxl</span>
+            </div>
+            <div>
+                <textarea class="wui-textarea wui-input-xl" disabled>
+<textarea class="wui-textarea " name="" disabled></textarea>
+</textarea>
+                <span class="wui-txt-info">disabled</span>
+            </div>
+            <div>
+                <textarea class="wui-textarea wui-input-xl" readonly>
+<textarea class="wui-textarea " name="" readonly></textarea>
+</textarea>
+                <span class="wui-txt-info">readonly</span>
+            </div>
+            <div>
+                <textarea class="wui-textarea placeholder wui-input-xl ">
+<textarea class="wui-textarea placeholder" name=""></textarea>
+</textarea>
+                <span class="wui-txt-info">placeholder</span>
             </div>
         </div>
         <br/><br/><br/><br/>
@@ -268,10 +340,96 @@
                 <span class="wui-txt-muted wui-txt-tar">右对齐 text-align: right !important;</span>
             </div>
         </div>
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/>
+        <h3 class="wui-module-subtitle">其它效果</h3>
+        <div class="wui-module-dom">
+            <div class="wui-form-item">
+                <label for="" class="wui-label">验证码</label>
+                <input class="wui-input wui-input-checkcode" type="text" data-explain="请输入右图中字符，不区分大小写。" maxlength="4" autocomplete="off" value="" name="fourcode">
+                <img class="ui-checkcode-imgcode-img" align="absMiddle" alt="请输入您看到的内容" src="https://omeo.alipay.com/service/checkcode?sessionID=82012ab6b1f4ed9e675fb9092a25cb3b&amp;r=0.9321065918075809" title="点击刷新图片校验码">
+                <a href="javascript:;">看不清，换一张</a>
+                <div class="wui-form-explain">请输入右图中字符，不区分大小写。</div>
+            </div>
+            <textarea class="wui-textarea copy-to-shear-board" style="width: 100%;height: 140px;">
+<div class="wui-form-item">
+    <label for="" class="wui-label">验证码</label>
+    <input class="wui-input wui-input-checkcode" type="text" data-explain="请输入右图中字符，不区分大小写。" maxlength="4" autocomplete="off" value="" name="fourcode">
+    <img class="ui-checkcode-imgcode-img" align="absMiddle" alt="请输入您看到的内容" src="https://omeo.alipay.com/service/checkcode?sessionID=82012ab6b1f4ed9e675fb9092a25cb3b&amp;r=0.9321065918075809" title="点击刷新图片校验码">
+    <a href="javascript:;">看不清，换一张</a>
+    <div class="wui-form-explain">请输入右图中字符，不区分大小写。</div>
+</div>
+</textarea>
+            <br/>
+            <br/>
+            <br/>
+            <div class="wui-form-item wui-form-item-hover">
+                <label for="" class="wui-label">wui-form-item-focus</label>
+                <div>
+                    <input type="text" class="wui-input"/>
+                </div>
+                <br/>
+                <div>
+                    <textarea name="" id="" cols="300" rows="10" class="wui-textarea"></textarea>
+                </div>
+                <p class="wui-form-explain">wui-form-item-hover 放在wui-form-item 同级的标签上(wui-form-explain颜色也会改变的)</p>
+            </div>
+            <br/>
+            <div class="wui-form-item wui-form-item-focus">
+                <label for="" class="wui-label">wui-form-item-focus</label>
+                <div>
+                    <input type="text" class="wui-input"/>
+                </div>
+                <br/>
+                <div>
+                    <textarea name="" id="" cols="300" rows="10" class="wui-textarea"></textarea>
+                </div>
+                <p class="wui-form-explain">wui-form-item-focus 放在wui-form-item 同级的标签上</p>
+            </div>
+            <br/>
+
+            <form class="wui-form" name="" method="post" action="#" id="">
+                <div class="wui-form-item wui-form-detaillist">
+                    <label for="" class="wui-label">wui-form-detaillist</label>
+                    <div>
+                        <input type="text" class="wui-input"/>
+                    </div>
+                    <p class="wui-form-explain">wui-form-detaillist 放在wui-form-item 同级的标签上,改变wui-label的字体颜色;如果要改变字体的大小,直接放在wui-form上,字体14px（默认是12px）</p>
+                </div>
+            </form>
+
+            <br/>
+        </div>
+        <br/><br/><br/><br/>
+        <h3 class="wui-module-subtitle">表单错误的相关的效果（把 wui-form-item-error 放在wui-form-item同级）</h3>
+        <div class="wui-form-item wui-form-item-error">
+            <label for="" class="wui-label">下拉选择</label>
+            <select id="province" name="province" class="wui-form-selector wui-form-select">
+                <option value="" >
+                    请选择
+                </option>
+                <option value="北京" >
+                    北京
+                </option>
+                <option value="上海" >
+                    上海
+                </option>
+                <option value="天津" >
+                    天津
+                </option>
+                <option value="浙江" >
+                    浙江
+                </option>
+            </select>
+
+            <p class="wui-form-explain">更多地区即将开通，敬请期待。</p>
+        </div>
+
+        <br/><br/>
     </div>
     <!--*******************************************************************************-->
 </div>
+<!--需要的属性-->
+
 <!--Javascript引用-开始-->
 <script src="http://a.taobao.fm/lib/jquery/jquery-1.11.2.min.js"></script>
 <script src="../copy-to-shear-board.js"></script>
