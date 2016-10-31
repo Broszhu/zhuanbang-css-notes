@@ -26,20 +26,25 @@
 
 /**************** 箭头相关的 ******************/
 .wui-tiptext-arrowup, .wui-tiptext-arrowup em, .wui-tiptext-arrowup span,
+.wui-tiptext-arrowright, .wui-tiptext-arrowright em, .wui-tiptext-arrowright span,
 .wui-tiptext-arrowleft, .wui-tiptext-arrowleft em, .wui-tiptext-arrowleft span,
 .wui-tiptext-arrowdown, .wui-tiptext-arrowdown em, .wui-tiptext-arrowdown span {
     position: absolute;  font-size: 14px;  font-family: "SimSun";  font-style: normal;  line-height: 1;  }
 
 .wui-tiptext-arrowup,
+.wui-tiptext-arrowright,
 .wui-tiptext-arrowleft,
 .wui-tiptext-arrowdown {  height: 10px;  width: 16px;  }
 
 .wui-tiptext-arrowup {  left: 32px;  top:-7px;  }
 .wui-tiptext-arrowup em {  top: -1px;  }
-.wui-tiptext-arrowleft {  left: -6px;  top:10px;  }
-.wui-tiptext-arrowleft em {  left:-1px;  }
+.wui-tiptext-arrowright {  right: -9px;  top:10px;  }
+.wui-tiptext-arrowright em {  left:1px;  }
+
 .wui-tiptext-arrowdown {  left: 32px;  bottom: -3px;  }
 .wui-tiptext-arrowdown em {  top: 1px;  }
+.wui-tiptext-arrowleft {  left: -6px;  top:10px;  }
+.wui-tiptext-arrowleft em {  left:-1px;  }
 /* arrow color*/
 .wui-tiptext-container-message  .wui-tiptext-arrow em {  color:#b2e2ea;  }
 .wui-tiptext-container-message  .wui-tiptext-arrow span {  color:#e5f2f8;  }
@@ -58,3 +63,7 @@
 
 /**************** 关闭按钮 ******************/
 .wui-tiptext-close {  position: absolute;  right: 10px;  top: -2px;  color: #60A2C5;  cursor: pointer;  }
+
+/**************** 去除边框 ******************/
+.wui-tiptext-noborder{border:0 none !important;}
+.wui-tiptext-noborder .wui-tiptext-arrow em{    top: 0; left: 0; }

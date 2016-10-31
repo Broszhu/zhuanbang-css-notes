@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <link href="http://a.f265.com/wui/reset.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/text-link/css/text-link.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/tiptext/css/tiptext.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/button/css/button.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="./css/tipbox.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/codeprettify/prettify.css"/>
+    <script src="http://a.taobao.fm/assets/codeprettify/prettify.js"></script>
+    <script>
+        window.onload = function () {
+            prettyPrint();
+        };
+    </script>
+    <style>
+        .demo-group{
+            margin-bottom: 20px;
+        }
+        .demo-group-title{
+            border-bottom: 1px solid darkgray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body id="page-demo">
+<div class="wui-module">
+    <div class="wui-module-head">
+        <h2 class="wui-module-title">
+            <a href="javascript:;" id="modules-button">tipbox</a>
+        </h2>
+        <p class="wui-module-description">点击输入框，它的value值就会自动复制到剪切板</p>
+        <br/><br/><br/>
+    </div>
+    <!--*******************************************************************************-->
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">wui-tiptext 文本</h3>
+        <div class="demo-group">
+            <p class="wui-tiptext wui-tiptext-message">
+                <i class="wui-tiptext-icon iconfont" title="提示">&#xe622;</i>
+                此服务支付宝不收取任何费用。
+            </p>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 80px;">
+
+</textarea>
+        </div>
+
+    </div>
+    <br/><br/><br/>
+    <!--*******************************************************************************-->
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<!--Javascript引用-开始-->
+<script src="http://a.taobao.fm/lib/jquery/jquery-1.11.2.min.js"></script>
+<script src="../copy-to-shear-board.js"></script>
+<!--Javascript引用-结束-->
+</body>
+</html>
