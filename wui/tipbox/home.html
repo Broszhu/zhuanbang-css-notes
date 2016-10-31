@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>文字相关展示</title>
+    <link href="http://a.f265.com/wui/reset.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/text-link/css/text-link.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/button/css/button.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="./css/tiptext.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/codeprettify/prettify.css"/>
+    <script src="http://a.taobao.fm/assets/codeprettify/prettify.js"></script>
+    <script>
+        window.onload = function () {
+            prettyPrint();
+        };
+    </script>
+    <style>
+        .demo-group{
+            margin-bottom: 20px;
+        }
+        .demo-group-title{
+            border-bottom: 1px solid darkgray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body id="page-demo">
+<div class="wui-module">
+    <div class="wui-module-head">
+        <h2 class="wui-module-title">
+            <a href="javascript:;" id="modules-button">tiptext</a>
+        </h2>
+        <p class="wui-module-description">点击输入框，它的value值就会自动复制到剪切板</p>
+        <br/><br/><br/>
+    </div>
+    <!--*******************************************************************************-->
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">wui-tiptext 文本</h3>
+        <div class="demo-group">
+            <p class="wui-tiptext wui-tiptext-message">
+                <i class="wui-tiptext-icon iconfont" title="提示">&#xe622;</i>
+                此服务支付宝不收取任何费用。
+            </p>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 80px;">
+&lt;p class=&quot;wui-tiptext wui-tiptext-message&quot;&gt;
+    &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;提示&quot;&gt;&amp;#xe622;&lt;/i&gt;
+    此服务支付宝不收取任何费用。
+&lt;/p&gt;
+</textarea>
+        </div>
+
+
+        <div class="demo-group">
+            <p class="wui-tiptext wui-tiptext-error">
+                <i class="wui-tiptext-icon iconfont" title="出错">&#xe611;</i>
+                此服务支付宝不收取任何费用。
+            </p>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 80px;">
+&lt;p class=&quot;wui-tiptext wui-tiptext-error&quot;&gt;
+    &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;出错&quot;&gt;&amp;#xe611;&lt;/i&gt;
+    此服务支付宝不收取任何费用。
+&lt;/p&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <p class="wui-tiptext wui-tiptext-warning">
+                <i class="wui-tiptext-icon iconfont" title="警告">&#xe629;</i>
+                此服务支付宝不收取任何费用。
+            </p>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 80px;">
+&lt;p class=&quot;wui-tiptext wui-tiptext-warning&quot;&gt;
+    &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;警告&quot;&gt;&amp;#xe629;&lt;/i&gt;
+    此服务支付宝不收取任何费用。
+&lt;/p&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <p class="wui-tiptext wui-tiptext-success">
+                <i class="wui-tiptext-icon iconfont" title="成功">&#xe612;</i>
+                此服务支付宝不收取任何费用。
+            </p>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 80px;">
+&lt;p class=&quot;wui-tiptext wui-tiptext-success&quot;&gt;
+    &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;成功&quot;&gt;&amp;#xe612;&lt;/i&gt;
+    此服务支付宝不收取任何费用。
+&lt;/p&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <p class="wui-tiptext wui-tiptext-question">
+                <i class="wui-tiptext-icon iconfont" title="疑问">&#xe60e;</i>
+                此服务支付宝不收取任何费用。
+            </p>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 80px;">
+&lt;p class=&quot;wui-tiptext wui-tiptext-question&quot;&gt;
+    &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;疑问&quot;&gt;&amp;#xe60e;&lt;/i&gt;
+    此服务支付宝不收取任何费用。
+&lt;/p&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <p class="wui-tiptext wui-tiptext-stop">
+                <i class="wui-tiptext-icon iconfont" title="阻止">&#xe621;</i>
+                此服务支付宝不收取任何费用。
+            </p>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 80px;">
+&lt;p class=&quot;wui-tiptext wui-tiptext-stop&quot;&gt;
+    &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;阻止&quot;&gt;&amp;#xe621;&lt;/i&gt;
+    此服务支付宝不收取任何费用。
+&lt;/p&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <p class="wui-tiptext wui-tiptext-wait">
+                <i class="wui-tiptext-icon iconfont" title="等待">&#xe620;</i>
+                此服务支付宝不收取任何费用。
+            </p>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 80px;">
+&lt;p class=&quot;wui-tiptext wui-tiptext-wait&quot;&gt;
+    &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;等待&quot;&gt;&amp;#xe620;&lt;/i&gt;
+    此服务支付宝不收取任何费用。
+&lt;/p&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">wui-tip-container 区块(含关闭按钮)</h3>
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-message">
+                <p class="wui-tiptext wui-tiptext-message">
+                    <i class="wui-tiptext-icon iconfont" title="提示">&#xe622;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+                <p class="wui-tiptext wui-tiptext-follow">此服务支付宝不收取任何费用。此服务支付宝真的不收取任何费用。</p>
+                <p class="wui-tiptext wui-tiptext-follow">此服务支付宝不收取任何费用。此服务支付宝真的不收取任何费用。</p>
+                <div class="wui-tiptext-close iconfont">&#xe659;</div>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 180px;width: 900px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-message&quot;&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-message&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;提示&quot;&gt;&amp;#xe622;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-follow&quot;&gt;此服务支付宝不收取任何费用。此服务支付宝真的不收取任何费用。&lt;/p&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-follow&quot;&gt;此服务支付宝不收取任何费用。此服务支付宝真的不收取任何费用。&lt;/p&gt;
+    &lt;div class=&quot;wui-tiptext-close iconfont&quot;&gt;&amp;#xe659;&lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+            <p>下面是关闭按钮的代码</p>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 40px;width: 900px;">
+&lt;div class=&quot;wui-tiptext-close iconfont&quot;&gt;&amp;#xe659;&lt;/div&gt;
+</textarea>
+        </div>
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-error">
+                <p class="wui-tiptext wui-tiptext-error">
+                    <i class="wui-tiptext-icon iconfont" title="出错">&#xe611;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+                <div class="wui-tiptext-close iconfont">&#xe659;</div>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 120px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-error&quot;&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-error&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;出错&quot;&gt;&amp;#xe611;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+    &lt;div class=&quot;wui-tiptext-close iconfont&quot;&gt;&amp;#xe659;&lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-warning">
+                <p class="wui-tiptext wui-tiptext-warning">
+                    <i class="wui-tiptext-icon iconfont" title="警告">&#xe629;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 120px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-warning&quot;&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-warning&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;警告&quot;&gt;&amp;#xe629;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-success">
+                <p class="wui-tiptext wui-tiptext-success">
+                    <i class="wui-tiptext-icon iconfont" title="成功">&#xe612;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 120px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-success&quot;&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-success&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;成功&quot;&gt;&amp;#xe612;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-question">
+                <p class="wui-tiptext wui-tiptext-question">
+                    <i class="wui-tiptext-icon iconfont" title="疑问">&#xe60e;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 120px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-question&quot;&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-question&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;疑问&quot;&gt;&amp;#xe60e;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-stop">
+                <p class="wui-tiptext wui-tiptext-stop">
+                    <i class="wui-tiptext-icon iconfont" title="阻止">&#xe621;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 120px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-stop&quot;&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-stop&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;阻止&quot;&gt;&amp;#xe621;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-wait">
+                <p class="wui-tiptext wui-tiptext-wait">
+                    <i class="wui-tiptext-icon iconfont" title="等待">&#xe620;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 120px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-wait&quot;&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-wait&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;等待&quot;&gt;&amp;#xe620;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+
+    </div>
+    <br/><br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">带箭头的标签(wui-tiptext-arrowup wui-tiptext-arrowdown wui-tiptext-arrowleft)</h3>
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-message">
+                <div class="wui-tiptext-arrow wui-tiptext-arrowup">
+                    <em>◆</em>
+                    <span>◆</span>
+                </div>
+                <p class="wui-tiptext wui-tiptext-message">
+                    <i class="wui-tiptext-icon iconfont" title="提示">&#xe622;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 180px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-message&quot;&gt;
+    &lt;div class=&quot;wui-tiptext-arrow wui-tiptext-arrowup&quot;&gt;
+        &lt;em&gt;◆&lt;/em&gt;
+        &lt;span&gt;◆&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-message&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;提示&quot;&gt;&amp;#xe622;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-message">
+                <div class="wui-tiptext-arrow wui-tiptext-arrowdown">
+                    <em>◆</em>
+                    <span>◆</span>
+                </div>
+                <p class="wui-tiptext wui-tiptext-message">
+                    <i class="wui-tiptext-icon iconfont" title="提示">&#xe622;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 180px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-message&quot;&gt;
+    &lt;div class=&quot;wui-tiptext-arrow wui-tiptext-arrowdown&quot;&gt;
+        &lt;em&gt;◆&lt;/em&gt;
+        &lt;span&gt;◆&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-message&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;提示&quot;&gt;&amp;#xe622;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+        <div class="demo-group">
+            <div class="wui-tiptext-container wui-tiptext-container-message">
+                <div class="wui-tiptext-arrow wui-tiptext-arrowleft">
+                    <em>◆</em>
+                    <span>◆</span>
+                </div>
+                <p class="wui-tiptext wui-tiptext-message">
+                    <i class="wui-tiptext-icon iconfont" title="提示">&#xe622;</i>
+                    此服务支付宝不收取任何费用。
+                </p>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 180px;">
+&lt;div class=&quot;wui-tiptext-container wui-tiptext-container-message&quot;&gt;
+    &lt;div class=&quot;wui-tiptext-arrow wui-tiptext-arrowleft&quot;&gt;
+        &lt;em&gt;◆&lt;/em&gt;
+        &lt;span&gt;◆&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;wui-tiptext wui-tiptext-message&quot;&gt;
+        &lt;i class=&quot;wui-tiptext-icon iconfont&quot; title=&quot;提示&quot;&gt;&amp;#xe622;&lt;/i&gt;
+        此服务支付宝不收取任何费用。
+    &lt;/p&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+    </div>
+    <!--*******************************************************************************-->
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<!--Javascript引用-开始-->
+<script src="http://a.taobao.fm/lib/jquery/jquery-1.11.2.min.js"></script>
+<script src="../copy-to-shear-board.js"></script>
+<!--Javascript引用-结束-->
+</body>
+</html>
