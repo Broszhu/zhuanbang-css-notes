@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <link href="http://a.f265.com/wui/reset.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="./css/table.css" rel="stylesheet" type="text/css" />
+    <link href="../tipbox/css/tipbox.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/codeprettify/prettify.css"/>
+    <script src="http://a.taobao.fm/assets/codeprettify/prettify.js"></script>
+    <script>
+        window.onload = function () {
+            prettyPrint();
+        };
+    </script>
+    <style>
+        .demo-group{
+            margin-bottom: 20px;
+        }
+        .demo-group-title{
+            border-bottom: 1px solid darkgray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body id="page-demo">
+<div class="wui-module">
+    <div class="wui-module-head">
+        <h2 class="wui-module-title">
+            <a href="javascript:;" id="modules-button">table</a>
+        </h2>
+        <p class="wui-module-description">点击输入框，它的value值就会自动复制到剪切板</p>
+        <br/><br/><br/>
+    </div>
+    <!--*******************************************************************************-->
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">正常表格</h3>
+        <div class="demo-group">
+            <div>
+                <div class="wui-table-title"><h3>这段文字是表格的标题</h3></div>
+                <table class="wui-table">
+                    <thead>
+                        <tr>
+                            <th>创建时间</th>
+                            <th>名称<span> / </span>交易号</th>
+                            <th>对方</th>
+                            <th>金额<span> / </span>明细</th>
+                            <th>状态</th>
+                            <th>操作</th>
+                            <th>备注</th>
+                        </tr>
+                    </thead>
+                    <!-- 表头可选 -->
+                    <tbody>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                            <td>Data</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="7">表尾数据</td>
+                        </tr>
+                    </tfoot>
+                    <!-- 表尾可选 -->
+                </table>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 950px;">
+            &lt;div&gt;
+                &lt;div class=&quot;wui-table-title&quot;&gt;&lt;h3&gt;这段文字是表格的标题&lt;/h3&gt;&lt;/div&gt;
+                &lt;table class=&quot;wui-table&quot;&gt;
+                    &lt;thead&gt;
+                        &lt;tr&gt;
+                            &lt;th&gt;创建时间&lt;/th&gt;
+                            &lt;th&gt;名称&lt;span&gt; / &lt;/span&gt;交易号&lt;/th&gt;
+                            &lt;th&gt;对方&lt;/th&gt;
+                            &lt;th&gt;金额&lt;span&gt; / &lt;/span&gt;明细&lt;/th&gt;
+                            &lt;th&gt;状态&lt;/th&gt;
+                            &lt;th&gt;操作&lt;/th&gt;
+                            &lt;th&gt;备注&lt;/th&gt;
+                        &lt;/tr&gt;
+                    &lt;/thead&gt;
+                    &lt;!-- 表头可选 --&gt;
+                    &lt;tbody&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                        &lt;/tr&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                            &lt;td&gt;Data&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tbody&gt;
+                    &lt;tfoot&gt;
+                        &lt;tr&gt;
+                            &lt;td colspan=&quot;7&quot;&gt;表尾数据&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/tfoot&gt;
+                    &lt;!-- 表尾可选 --&gt;
+                &lt;/table&gt;
+            &lt;/div&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/><br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">无边框的表格</h3>
+        <div class="demo-group">
+            <table class="wui-table wui-table-noborder">
+                <thead>
+                <tr>
+                    <th>创建时间</th>
+                    <th>名称<span> / </span>交易号</th>
+                    <th>对方</th>
+                    <th>金额<span> / </span>明细</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                    <th>备注</th>
+                </tr>
+                </thead>
+                <!-- 表头可选 -->
+                <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td colspan="7">表尾数据</td>
+                </tr>
+                </tfoot>
+                <!-- 表尾可选 -->
+            </table>
+            <br/>
+            <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-table-noborder"/>
+            <span>放在 wui-table 同级</span>
+        </div>
+    </div>
+    <br/> <br/> <br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">无左右边框表格</h3>
+        <div class="demo-group">
+            <div>
+                <div class="wui-table-title"><h3>这段文字是表格的标题</h3></div>
+                <table class="wui-table wui-table-noborder-lr">
+                    <thead>
+                    <tr>
+                        <th>创建时间</th>
+                        <th>名称<span> / </span>交易号</th>
+                        <th>对方</th>
+                        <th>金额<span> / </span>明细</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                        <th>备注</th>
+                    </tr>
+                    </thead>
+                    <!-- 表头可选 -->
+                    <tbody>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="7">表尾数据</td>
+                    </tr>
+                    </tfoot>
+                    <!-- 表尾可选 -->
+                </table>
+            </div>
+            <br/>
+            <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-table-noborder-lr"/>
+            <span>放在 wui-table 同级</span>
+        </div>
+    </div>
+    <br/><br/><br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">内部只有横线边框表格</h3>
+        <div class="demo-group">
+            <div>
+                <div class="wui-table-title"><h3>这段文字是表格的标题</h3></div>
+                <table class="wui-table wui-table-item-noborder-lr">
+                    <thead>
+                    <tr>
+                        <th>创建时间</th>
+                        <th>名称<span> / </span>交易号</th>
+                        <th>对方</th>
+                        <th>金额<span> / </span>明细</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                        <th>备注</th>
+                    </tr>
+                    </thead>
+                    <!-- 表头可选 -->
+                    <tbody>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    <tr>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                        <td>Data</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td colspan="7">表尾数据</td>
+                    </tr>
+                    </tfoot>
+                    <!-- 表尾可选 -->
+                </table>
+            </div>
+            <br/>
+            <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-table-item-noborder-lr"/>
+            <span>放在 wui-table 同级</span>
+        </div>
+    </div>
+    <br/><br/><br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">可以嵌在别的框里的表格</h3>
+        <div class="demo-group">
+            <table class="wui-table wui-table-inbox">
+                <thead>
+                <tr>
+                    <th>创建时间</th>
+                    <th>名称<span> / </span>交易号</th>
+                    <th>对方</th>
+                    <th>金额<span> / </span>明细</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                    <th>备注</th>
+                </tr>
+                </thead>
+                <!-- 表头可选 -->
+                <tbody>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                <tr>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                    <td>Data</td>
+                </tr>
+                </tbody>
+                <!-- 表尾可选 -->
+            </table>
+            <br/>
+            <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-table-inbox"/>
+            <span>放在 wui-table 同级</span>
+        </div>
+    </div>
+    <br/><br/><br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">表格的微调</h3>
+        <div class="demo-group">
+            <table class="wui-table wui-table-layout-fixed">
+                <thead>
+                <tr>
+                    <th>创建时间</th>
+                    <th>名称<span> / </span>交易号</th>
+                    <th class="w-7">对方</th>
+                    <th>金额<span> / </span>明细</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                    <th>备注</th>
+                </tr>
+                </thead>
+                <!-- 表头可选 -->
+                <tbody>
+                <tr>
+                    <td>
+                        <ul class="wui-list ">
+                            <li class="wui-list-item">文字文字文字文字</li>
+                            <li class="wui-list-item">文字文字文字文字</li>
+                            <li class="wui-list-item">文字文字文字文字</li>
+                        </ul>
+                    </td>
+                    <td class="null-list">
+                        null-list 居中显示的
+                        <p class="tip-icon">tip-icon</p>
+                    </td>
+                    <td class="wui-table-tar wui-to-top">wui-table-tar 右对齐</td>
+                    <td >qwertyuioipasdfghjklzxcvbnm</td>
+                    <td>11111111111111 111111111</td>
+                    <td>中文中文中文中文中文中文中文</td>
+                    <td class="table-tipbox-wrap">
+                        <div class="wui-tipbox wui-tipbox-error wui-tipbox-noborder">
+                            <div class="wui-tipbox-icon">
+                                <i class="iconfont" title="出错">&#xe611;</i>
+                            </div>
+                            <div class="wui-tipbox-content">
+                                <h3 class="wui-tipbox-title">测试 table-tipbox-wrap</h3>
+                                <p class="wui-tipbox-explain">表格内嵌入内容时使用。</p>
+                                <p class="wui-tipbox-explain"><a href="#">查询缴费记录</a> | <a href="#">我的支付宝</a>
+                                </p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+                <!-- 表尾可选 -->
+            </table>
+            <div class="wui-table-bar">测试wui-table-bar的</div>
+            <br/>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-table-bar"/>
+                <span>table标签的兄弟标签即可</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-table-tar"/>
+                <span>放在th和td标签上的,右对齐</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="null-list"/>
+                <span>null-list居中显示的，</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="tip-icon"/>
+                <span>放在null-list内，</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="table-tipbox-wrap"/>
+                <span>当内部嵌入有背景的元素时使用</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-table-layout-fixed"/>
+                <span>wui-table-layout-fixed可以把元素内一端文字，一行显示;中文无效，支持英文和数字,超出时空格可以换货</span>
+
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-to-top"/>
+                <span>wui-to-top放在td上，可以让内容顶部对齐</span>
+            </div>
+            <textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 100px;">
+                        &lt;ul class=&quot;wui-list &quot;&gt;
+                            &lt;li class=&quot;wui-list-item&quot;&gt;文字文字文字文字&lt;/li&gt;
+                            &lt;li class=&quot;wui-list-item&quot;&gt;文字文字文字文字&lt;/li&gt;
+                            &lt;li class=&quot;wui-list-item&quot;&gt;文字文字文字文字&lt;/li&gt;
+                        &lt;/ul&gt;
+</textarea>
+        </div>
+    </div>
+    <!--*******************************************************************************-->
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<!--Javascript引用-开始-->
+<script src="http://a.taobao.fm/lib/jquery/jquery-1.11.2.min.js"></script>
+<script src="../copy-to-shear-board.js"></script>
+<!--Javascript引用-结束-->
+</body>
+</html>
