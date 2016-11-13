@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <link href="http://a.f265.com/wui/reset.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />
+
+
+    <link href="./css/list.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/codeprettify/prettify.css"/>
+    <script src="http://a.taobao.fm/assets/codeprettify/prettify.js"></script>
+    <script>
+        window.onload = function () {
+            prettyPrint();
+        };
+    </script>
+    <style>
+        .demo-group{
+            margin-bottom: 20px;
+        }
+        .demo-group-title{
+            border-bottom: 1px solid darkgray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body id="page-demo">
+<div class="wui-module">
+    <div class="wui-module-head">
+        <h2 class="wui-module-title">
+            <a href="javascript:;" id="modules-button">list</a>
+        </h2>
+        <p class="wui-module-description">点击输入框，它的value值就会自动复制到剪切板</p>
+        <br/><br/><br/>
+    </div>
+    <!--*******************************************************************************-->
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">默认列表 - 有链接的</h3>
+        <div class="demo-group">
+            <ul class="wui-list">
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+                <li class="wui-list-item"><a href="#">如何提现？</a></li>
+                <li class="wui-list-item"><a href="#">支付宝数字证书有什么作用？</a></li>
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+            </ul>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 120px;">
+&lt;ul class=&quot;wui-list&quot;&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何提现？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;支付宝数字证书有什么作用？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">默认列表 - 没有链接的</h3>
+        <div class="demo-group">
+            <ul class="wui-list">
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">如何申请认证？</span>
+                </li>
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">如何申请认证？</span>
+                </li>
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">支付宝数字证书有什么作用？</span>
+                </li>
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">如何申请认证？</span>
+                </li>
+            </ul>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 240px;">
+&lt;ul class=&quot;wui-list&quot;&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;
+        &lt;span class=&quot;wui-list-item-text&quot;&gt;如何申请认证？&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;
+        &lt;span class=&quot;wui-list-item-text&quot;&gt;如何申请认证？&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;
+        &lt;span class=&quot;wui-list-item-text&quot;&gt;支付宝数字证书有什么作用？&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;
+        &lt;span class=&quot;wui-list-item-text&quot;&gt;如何申请认证？&lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">灰色方块 - 有链接的</h3>
+        <div class="demo-group">
+            <ul class="wui-list wui-list-gray">
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+                <li class="wui-list-item"><a href="#">如何提现？</a></li>
+                <li class="wui-list-item"><a href="#">支付宝数字证书有什么作用？</a></li>
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+            </ul>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 140px;">
+&lt;ul class=&quot;wui-list wui-list-gray&quot;&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何提现？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;支付宝数字证书有什么作用？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">灰色方块 - 没有链接的</h3>
+        <div class="demo-group">
+            <ul class="wui-list wui-list-gray">
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">支付宝数字证书有什么作用？</span>
+                </li>
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">如何申请认证？</span>
+                </li>
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">如何申请认证？</span>
+                </li>
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">如何申请认证？</span>
+                </li>
+                <li class="wui-list-item">
+                    <span class="wui-list-item-text">如何申请认证？</span>
+                </li>
+            </ul>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 140px;">
+&lt;ul class=&quot;wui-list wui-list-gray&quot;&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;
+        &lt;span class=&quot;wui-list-item-text&quot;&gt;支付宝数字证书有什么作用？&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;
+        &lt;span class=&quot;wui-list-item-text&quot;&gt;如何申请认证？&lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">灰色小方角＋灰色链接</h3>
+        <div class="demo-group">
+            <ul class="wui-list wui-list-graylink">
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+                <li class="wui-list-item"><a href="#">支付宝数字证书有什么作用？</a></li>
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+            </ul>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 140px;">
+&lt;ul class=&quot;wui-list wui-list-graylink&quot;&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;支付宝数字证书有什么作用？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">没有小图标的</h3>
+        <div class="demo-group">
+            <ul class="wui-list wui-list-nosquare">
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+                <li class="wui-list-item"><a href="#">支付宝数字证书有什么作用？</a></li>
+                <li class="wui-list-item"><a href="#">如何申请认证？</a></li>
+            </ul>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 140px;">
+&lt;ul class=&quot;wui-list wui-list-nosquare&quot;&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;支付宝数字证书有什么作用？&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;wui-list-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;如何申请认证？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">中间对齐的列表</h3>
+        <div class="demo-group">
+<dl class="wui-dlist">
+    <dt class="wui-dlist-tit">姓名：</dt>
+    <dd class="wui-dlist-det">吴鹏飞</dd>
+    <dt class="wui-dlist-tit">实名认证：</dt>
+    <dd class="wui-dlist-det">已认证 <a title="查看" href="#">查看</a></dd>
+    <dt class="wui-dlist-tit">手机号码：</dt>
+    <dd class="wui-dlist-det">13811119999 <a title="修改号码" href="#">修改号码</a></dd>
+    <dt class="wui-dlist-tit">Email邮箱：</dt>
+    <dd class="wui-dlist-det">123@abc.com</dd>
+    <dt class="wui-dlist-tit">淘宝绑定账户：</dt>
+    <dd class="wui-dlist-det">用户名字 <a title="查看" href="#">管理</a></dd>
+    <dt class="wui-dlist-tit">注册时间：</dt>
+    <dd class="wui-dlist-det">2011-10-18</dd>
+</dl>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 240px;">
+&lt;dl class=&quot;wui-dlist&quot;&gt;
+    &lt;dt class=&quot;wui-dlist-tit&quot;&gt;姓名：&lt;/dt&gt;
+    &lt;dd class=&quot;wui-dlist-det&quot;&gt;吴鹏飞&lt;/dd&gt;
+    &lt;dt class=&quot;wui-dlist-tit&quot;&gt;实名认证：&lt;/dt&gt;
+    &lt;dd class=&quot;wui-dlist-det&quot;&gt;已认证 &lt;a title=&quot;查看&quot; href=&quot;#&quot;&gt;查看&lt;/a&gt;&lt;/dd&gt;
+    &lt;dt class=&quot;wui-dlist-tit&quot;&gt;手机号码：&lt;/dt&gt;
+    &lt;dd class=&quot;wui-dlist-det&quot;&gt;13811119999 &lt;a title=&quot;修改号码&quot; href=&quot;#&quot;&gt;修改号码&lt;/a&gt;&lt;/dd&gt;
+    &lt;dt class=&quot;wui-dlist-tit&quot;&gt;Email邮箱：&lt;/dt&gt;
+    &lt;dd class=&quot;wui-dlist-det&quot;&gt;123@abc.com&lt;/dd&gt;
+    &lt;dt class=&quot;wui-dlist-tit&quot;&gt;淘宝绑定账户：&lt;/dt&gt;
+    &lt;dd class=&quot;wui-dlist-det&quot;&gt;用户名字 &lt;a title=&quot;查看&quot; href=&quot;#&quot;&gt;管理&lt;/a&gt;&lt;/dd&gt;
+    &lt;dt class=&quot;wui-dlist-tit&quot;&gt;注册时间：&lt;/dt&gt;
+    &lt;dd class=&quot;wui-dlist-det&quot;&gt;2011-10-18&lt;/dd&gt;
+&lt;/dl&gt;
+</textarea>
+        </div>
+    </div>
+    <!--*******************************************************************************-->
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<!--Javascript引用-开始-->
+<script src="http://a.taobao.fm/lib/jquery/jquery-1.11.2.min.js"></script>
+<script src="../copy-to-shear-board.js"></script>
+<!--Javascript引用-结束-->
+</body>
+</html>
