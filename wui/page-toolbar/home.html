@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <link href="http://a.f265.com/wui/reset.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/button/css/button.css" rel="stylesheet" type="text/css" />
+
+    <link href="./css/page-toolbar.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/codeprettify/prettify.css"/>
+    <script src="http://a.taobao.fm/assets/codeprettify/prettify.js"></script>
+    <script>
+        window.onload = function () {
+            prettyPrint();
+        };
+    </script>
+    <style>
+        .demo-group{
+            margin-bottom: 20px;
+        }
+        .demo-group-title{
+            border-bottom: 1px solid darkgray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body id="page-demo">
+<div class="wui-module">
+    <div class="wui-module-head">
+        <h2 class="wui-module-title">
+            <a href="javascript:;" id="modules-button">page-toolbar</a>
+        </h2>
+        <p class="wui-module-description">点击输入框，它的value值就会自动复制到剪切板</p>
+        <br/><br/><br/>
+    </div>
+    <!--*******************************************************************************-->
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">正常工具条</h3>
+        <div class="demo-group">
+            <div class="wui-toolbar wui-toolbar-bg-topborder">
+                <div class="wui-toolbar-filters">
+                    <div class="filter-bar">
+                        <div class="filter-tool cf">
+                            <div class="filter-con">
+                                <strong class="filter-lable">时间</strong>
+                                <div class="filter-section cf" id="">
+                                    <ul id="" class="filter-select cf">
+                                        <li class="filter-item">
+                                            <a id="aRecent7Days" href="javascript:void(0);">7天</a>
+                                        </li>
+                                        <li class="filter-item">
+                                            <a id="aRecent14Days" href="javascript:void(0);">14天</a>
+                                        </li>
+                                        <li class="filter-item active">
+                                            <a id="aRecent30Days" href="javascript:void(0);">30天</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="filter-con">
+                                <strong class="filter-lable">搜索</strong>
+                                <div class="filter-section cf" id="">
+                                    <form id="" class="filter-form cf">
+                                        <input type="text" value="" id="keyword" class="filter-form-input-text" placeholder="用户昵称">
+                                        <button type="button" id="search" class="wui-button wui-button-white">
+                                            <i class="iconfont">&#xe649;</i>搜索
+                                        </button>
+                                        <button type="button" id="reset" class="wui-button wui-button-white">清空条件</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-bar" style="">
+                        <div class="filter-tool cf">
+                            <strong class="filter-lable" >增长来源</strong>
+                            <div id="filter-section">
+                                <div class="filter-buttons">
+                                    <button class="filter-button-item  current" value="-1" title="全部" name="source" id="source_0">
+                                        <span class="ffbug-wrapper">全部</span>
+                                    </button>
+                                    <button class="filter-button-item " value="35" title="搜索公众号名称" name="source" id="source_1">
+                                        <span class="ffbug-wrapper">搜索公众号名称</span>
+                                    </button>
+                                    <button class="filter-button-item " value="3" title="搜索微信号" name="source" id="source_2">
+                                        <span class="ffbug-wrapper">搜索微信号</span>
+                                    </button>
+                                    <button class="filter-button-item " value="43" title="图文消息右上角菜单" name="source" id="source_3">
+                                        <span class="ffbug-wrapper">图文消息右上角菜单</span>
+                                    </button>
+                                    <button class="filter-button-item " value="17" title="名片分享" name="source" id="source_4">
+                                        <span class="ffbug-wrapper">名片分享</span>
+                                    </button>
+                                    <button class="filter-button-item " value="0" title="其他" name="source" id="source_5">
+                                        <span class="ffbug-wrapper">其他</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wui-toolbar-help">
+                    <a href="#" class=""><i class="iconfont wui-txt-sm">&#xe60e;</i> 公众平台门店信息填写规范</a>
+                </div>
+                <div class="wui-toolbar-act">
+                    <a href="javascript:;" class="wui-button wui-button-green">新建代理</a>
+                    <a href="javascript:;" class="wui-button wui-button-green">绑定设备</a>
+                </div>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 620px;">
+&lt;div class=&quot;wui-toolbar wui-toolbar-bg-topborder&quot;&gt;
+    &lt;div class=&quot;wui-toolbar-filters&quot;&gt;
+        &lt;div class=&quot;filter-bar&quot;&gt;
+            &lt;div class=&quot;filter-tool cf&quot;&gt;
+                &lt;div class=&quot;filter-con&quot;&gt;
+                    &lt;strong class=&quot;filter-lable&quot;&gt;时间&lt;/strong&gt;
+                    &lt;div class=&quot;filter-section cf&quot; id=&quot;&quot;&gt;
+                        &lt;ul id=&quot;&quot; class=&quot;filter-select cf&quot;&gt;
+                            &lt;li class=&quot;filter-item&quot;&gt;
+                                &lt;a id=&quot;aRecent7Days&quot; href=&quot;javascript:void(0);&quot;&gt;7天&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;filter-item&quot;&gt;
+                                &lt;a id=&quot;aRecent14Days&quot; href=&quot;javascript:void(0);&quot;&gt;14天&lt;/a&gt;
+                            &lt;/li&gt;
+                            &lt;li class=&quot;filter-item active&quot;&gt;
+                                &lt;a id=&quot;aRecent30Days&quot; href=&quot;javascript:void(0);&quot;&gt;30天&lt;/a&gt;
+                            &lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;filter-con&quot;&gt;
+                    &lt;strong class=&quot;filter-lable&quot;&gt;搜索&lt;/strong&gt;
+                    &lt;div class=&quot;filter-section cf&quot; id=&quot;&quot;&gt;
+                        &lt;form id=&quot;&quot; class=&quot;filter-form cf&quot;&gt;
+                            &lt;input type=&quot;text&quot; value=&quot;&quot; id=&quot;keyword&quot; class=&quot;filter-form-input-text&quot; placeholder=&quot;用户昵称&quot;&gt;
+                            &lt;button type=&quot;button&quot; id=&quot;search&quot; class=&quot;wui-button wui-button-white&quot;&gt;
+                                &lt;i class=&quot;iconfont&quot;&gt;&amp;#xe649;&lt;/i&gt;搜索
+                            &lt;/button&gt;
+                            &lt;button type=&quot;button&quot; id=&quot;reset&quot; class=&quot;wui-button wui-button-white&quot;&gt;清空条件&lt;/button&gt;
+                        &lt;/form&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;filter-bar&quot; style=&quot;&quot;&gt;
+            &lt;div class=&quot;filter-tool cf&quot;&gt;
+                &lt;strong class=&quot;filter-lable&quot; &gt;增长来源&lt;/strong&gt;
+                &lt;div id=&quot;filter-section&quot;&gt;
+                    &lt;div class=&quot;filter-buttons&quot;&gt;
+                        &lt;button class=&quot;filter-button-item  current&quot; value=&quot;-1&quot; title=&quot;全部&quot; name=&quot;source&quot; id=&quot;source_0&quot;&gt;
+                            &lt;span class=&quot;ffbug-wrapper&quot;&gt;全部&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;button class=&quot;filter-button-item &quot; value=&quot;35&quot; title=&quot;搜索公众号名称&quot; name=&quot;source&quot; id=&quot;source_1&quot;&gt;
+                            &lt;span class=&quot;ffbug-wrapper&quot;&gt;搜索公众号名称&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;button class=&quot;filter-button-item &quot; value=&quot;3&quot; title=&quot;搜索微信号&quot; name=&quot;source&quot; id=&quot;source_2&quot;&gt;
+                            &lt;span class=&quot;ffbug-wrapper&quot;&gt;搜索微信号&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;button class=&quot;filter-button-item &quot; value=&quot;43&quot; title=&quot;图文消息右上角菜单&quot; name=&quot;source&quot; id=&quot;source_3&quot;&gt;
+                            &lt;span class=&quot;ffbug-wrapper&quot;&gt;图文消息右上角菜单&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;button class=&quot;filter-button-item &quot; value=&quot;17&quot; title=&quot;名片分享&quot; name=&quot;source&quot; id=&quot;source_4&quot;&gt;
+                            &lt;span class=&quot;ffbug-wrapper&quot;&gt;名片分享&lt;/span&gt;
+                        &lt;/button&gt;
+                        &lt;button class=&quot;filter-button-item &quot; value=&quot;0&quot; title=&quot;其他&quot; name=&quot;source&quot; id=&quot;source_5&quot;&gt;
+                            &lt;span class=&quot;ffbug-wrapper&quot;&gt;其他&lt;/span&gt;
+                        &lt;/button&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wui-toolbar-help&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;&quot;&gt;&lt;i class=&quot;iconfont wui-txt-sm&quot;&gt;&amp;#xe60e;&lt;/i&gt; 公众平台门店信息填写规范&lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;wui-toolbar-act&quot;&gt;
+        &lt;a href=&quot;javascript:;&quot; class=&quot;wui-button wui-button-green&quot;&gt;新建代理&lt;/a&gt;
+        &lt;a href=&quot;javascript:;&quot; class=&quot;wui-button wui-button-green&quot;&gt;绑定设备&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <!--*******************************************************************************-->
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<!--Javascript引用-开始-->
+<script src="http://a.taobao.fm/lib/jquery/jquery-1.11.2.min.js"></script>
+<script src="../copy-to-shear-board.js"></script>
+<!--Javascript引用-结束-->
+</body>
+</html>
