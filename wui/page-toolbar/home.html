@@ -9,6 +9,9 @@
 
     <link href="./css/page-toolbar.css" rel="stylesheet" type="text/css" />
 
+    <link href="http://a.f265.com//module/month-picker/css/month-picker.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.f265.com/module/daterangepicker/css/daterangepicker.css" rel="stylesheet" type="text/css" />
+
     <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
     <link rel="stylesheet" href="http://a.taobao.fm/assets/codeprettify/prettify.css"/>
     <script src="http://a.taobao.fm/assets/codeprettify/prettify.js"></script>
@@ -45,7 +48,10 @@
                     <div class="filter-bar">
                         <div class="filter-tool cf">
                             <div class="filter-con">
+                                <strong class="filter-lable">说明文字</strong>
+                                <strong class="filter-lable">说明文字</strong>
                                 <strong class="filter-lable">时间</strong>
+                                <span class="filter-labletext">无左右间距的文字</span>
                                 <div class="filter-section cf" id="">
                                     <ul id="" class="filter-select cf">
                                         <li class="filter-item">
@@ -66,6 +72,8 @@
                                 <div class="filter-section cf" id="">
                                     <form id="" class="filter-form cf">
                                         <input type="text" value="" id="keyword" class="filter-form-input-text" placeholder="用户昵称">
+                                        <input type="text" value="" class="filter-form-input-text filter-input-s" placeholder="小输入框">
+                                        <input type="text" value="" class="filter-form-input-text filter-input-l" placeholder="大输入框">
                                         <button type="button" id="search" class="wui-button wui-button-white">
                                             <i class="iconfont">&#xe649;</i>搜索
                                         </button>
@@ -188,6 +196,176 @@
         </div>
     </div>
     <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">工具条外观</h3>
+        <div class="demo-group">
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-toolbar-bg-topborder"/>
+                <span>顶部边框，放在wui-toolbar同级</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-toolbar-noborder"/>
+                <span>无边框，放在wui-toolbar同级</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="wui-toolbar-bg"/>
+                <span>有背景颜色的工具条，放在wui-toolbar同级</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="filter-input-s"/>
+                <span>小输入框，放在filter-form-input-text同级</span>
+            </div>
+            <div>
+                <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value="filter-input-l"/>
+                <span>小输入框，放在 filter-form-input-text 同级</span>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">有下拉选择的</h3>
+        <div class="demo-group">
+            <div class="wui-toolbar wui-toolbar-bg">
+                <div class="wui-toolbar-filters">
+                    <div class="filter-bar">
+                        <div class="filter-tool cf">
+                            <div class="filter-con">
+                                <strong class="filter-lable">时间</strong>
+                                <div class="filter-section cf" id="">
+                                    <ul class="filter-select cf">
+                                        <li class="filter-item"><a  href="javascript:void(0);">7天</a></li>
+                                        <li class="filter-item"><a  href="javascript:void(0);">14天</a></li>
+                                        <li class="filter-item active"><a href="javascript:void(0);">30天</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="filter-con">
+                                <strong class="filter-lable">选择代理商</strong>
+                                <div class="filter-dropdown" id="j-agent-select">
+                                    <span class="filter-dropdown-con" id="">2015-06-06 至 2015-07-06</span>
+                                    <span class="filter-dropdown-icon iconfont" id="">&#xe647;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wui-toolbar-act">
+                    <a href="javascript:;" class="wui-button wui-button-green">新建代理</a>
+                    <a href="javascript:;" class="wui-button wui-button-green">绑定设备</a>
+                </div>
+            </div>
+            <textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 120px;">
+&lt;div class=&quot;filter-con&quot;&gt;
+    &lt;strong class=&quot;filter-lable&quot;&gt;选择代理商&lt;/strong&gt;
+    &lt;div class=&quot;filter-dropdown&quot; id=&quot;j-agent-select&quot;&gt;
+        &lt;span class=&quot;filter-dropdown-con&quot; id=&quot;&quot;&gt;2015-06-06 至 2015-07-06&lt;/span&gt;
+        &lt;span class=&quot;filter-dropdown-icon iconfont&quot; id=&quot;&quot;&gt;&amp;#xe647;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+            <span>有下拉框样式的</span>
+            <br/>
+            <textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 90px;">
+&lt;div class=&quot;wui-toolbar-act&quot;&gt;
+    &lt;a href=&quot;javascript:;&quot; class=&quot;wui-button wui-button-green&quot;&gt;新建代理&lt;/a&gt;
+    &lt;a href=&quot;javascript:;&quot; class=&quot;wui-button wui-button-green&quot;&gt;绑定设备&lt;/a&gt;
+&lt;/div&gt;
+</textarea>
+            <span>右侧区域的</span>
+
+
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">有下拉选择的</h3>
+        <div class="demo-group">
+            <div class="wui-toolbar wui-toolbar-bg">
+                <div class="wui-toolbar-filters">
+                    <div class="filter-bar">
+                        <div class="filter-tool cf">
+                            <div class="filter-con">
+                                <strong class="filter-lable">选择代理商</strong>
+                                <span class="wui-select focus" tabindex="0">
+                                    <select class="wui-input" id="search-merchant-selset">
+                                        <option value="merchant_id">商家编号</option>
+                                        <option value="merchant_name" selected="">商家名称</option>
+                                    </select>
+<!--                                    <a class="wui-select-label" href="javascript:;">
+                                        <span class="wui-select-label-con">商家编号</span>
+                                    </a>
+                                    <span class="wui-select-list-wrapper" style="width: 102px;">
+                                        <span class="wui-select-list" style="max-height: 64px;">
+                                            <span class="wui-select-option active selected" title="商家编号" data-value="merchant_id">商家编号</span>
+                                            <span class="wui-select-option" title="商家名称" data-value="merchant_name">商家名称</span>
+                                        </span>
+                                    </span>-->
+                                    <input type="text" value="" class="wui-input filter-input-s search-txt" placeholder="前面有筛选的">
+                                    <button type="submit" class="wui-button wui-button-white"><i class="iconfont">&#xe649;</i>搜索</button>
+                                    <button type="reset" class="wui-button wui-button-white">清空条件</button>
+                                </span>
+                            </div>
+                            <div class="filter-con">
+                                <strong class="filter-lable">选择月份</strong>
+                                <div class="filter-section cf">
+                                    <div class="wui-month-picker">
+                                        <span class="month-picker-view">2016-11</span>
+                                        <input type="hidden" value="2016-11" id="month-picker">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="filter-con">
+                                <strong class="filter-lable">自定义日期</strong>
+                                <div class="filter-section cf">
+                                    <form  class="filter-form cf">
+                                        <div class="filter-form-date">
+                                            <input type="text" value="" id="custom-date" class="filter-form-input-date filter-input-xl" placeholder="选择自定义日期">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 200px;">
+&lt;select class=&quot;wui-input&quot; id=&quot;search-merchant-selset&quot;&gt;
+    &lt;option value=&quot;merchant_id&quot;&gt;商家编号&lt;/option&gt;
+    &lt;option value=&quot;merchant_name&quot; selected=&quot;&quot;&gt;商家名称&lt;/option&gt;
+&lt;/select&gt;
+</textarea>
+        <textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 200px;">
+&lt;div class=&quot;filter-con&quot;&gt;
+    &lt;strong class=&quot;filter-lable&quot;&gt;选择月份&lt;/strong&gt;
+    &lt;div class=&quot;filter-section cf&quot;&gt;
+        &lt;div class=&quot;wui-month-picker&quot;&gt;
+            &lt;span class=&quot;month-picker-view&quot;&gt;2016-11&lt;/span&gt;
+            &lt;input type=&quot;hidden&quot; value=&quot;2016-11&quot; id=&quot;month-picker&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+        <textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 200px;">
+&lt;div class=&quot;filter-con&quot;&gt;
+    &lt;strong class=&quot;filter-lable&quot;&gt;自定义日期&lt;/strong&gt;
+    &lt;div class=&quot;filter-section cf&quot;&gt;
+        &lt;form  class=&quot;filter-form cf&quot;&gt;
+            &lt;div class=&quot;filter-form-date&quot;&gt;
+                &lt;input type=&quot;text&quot; value=&quot;&quot; id=&quot;custom-date&quot; class=&quot;filter-form-input-date filter-input-xl&quot; placeholder=&quot;选择自定义日期&quot;&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</textarea>
+        <br/>
+        <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value='<link href="http://a.f265.com//module/month-picker/css/month-picker.css" rel="stylesheet" type="text/css" />'/>
+        <span>选择月份的样式引用</span>
+        <br/>
+        <input type="text" class="wui-input wui-input-xxxl copy-to-shear-board" value='<link href="http://a.f265.com/module/daterangepicker/css/daterangepicker.css" rel="stylesheet" type="text/css" />'/>
+        <span>选择日期的样式引用</span>
+    </div>
     <!--*******************************************************************************-->
     <br/><br/><br/><br/><br/><br/><br/><br/><br/>
 </div>
