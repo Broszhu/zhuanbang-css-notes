@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <link href="http://a.f265.com/wui/reset.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/form/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="http://a.taobao.fm/wui/button/css/button.css" rel="stylesheet" type="text/css" />
+
+    <link href="./css/paging.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/demo/demo.css"/>
+    <link rel="stylesheet" href="http://a.taobao.fm/assets/codeprettify/prettify.css"/>
+    <script src="http://a.taobao.fm/assets/codeprettify/prettify.js"></script>
+    <script>
+        window.onload = function () {
+            prettyPrint();
+        };
+    </script>
+    <style>
+        .demo-group{
+            margin-bottom: 20px;
+        }
+        .demo-group-title{
+            border-bottom: 1px solid darkgray;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body id="page-demo">
+<div class="wui-module">
+    <div class="wui-module-head">
+        <h2 class="wui-module-title">
+            <a href="javascript:;" id="modules-button">paging</a>
+        </h2>
+        <p class="wui-module-description">点击输入框，它的value值就会自动复制到剪切板</p>
+        <br/><br/><br/>
+    </div>
+    <!--*******************************************************************************-->
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">默认的</h3>
+        <div class="demo-group">
+<div class="wui-paging">
+    <span class="wui-paging-total">共 12489 条记录</span>
+    <a href="#" class="wui-paging-prev">
+        <i class="iconfont" title="左三角形">&#xe614;</i> 上一页
+    </a>
+    <a href="#" class="wui-paging-item">1</a>
+    <a href="#" class="wui-paging-item wui-paging-current">2</a>
+    <a href="#" class="wui-paging-item">3</a>
+    <a href="#" class="wui-paging-item">4</a>
+    <a href="#" class="wui-paging-item">5</a>
+    <a href="#" class="wui-paging-item">6</a>
+    <a href="#" class="wui-paging-item">7</a>
+    <span class="wui-paging-ellipsis">...</span>
+    <a href="#" class="wui-paging-item">24</a>
+    <a href="#" class="wui-paging-next">
+        下一页 <i class="iconfont" title="右三角形">&#xe615;</i>
+    </a>
+</div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 300px;">
+&lt;div class=&quot;wui-paging&quot;&gt;
+    &lt;span class=&quot;wui-paging-total&quot;&gt;共 12489 条记录&lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-prev&quot;&gt;
+        &lt;i class=&quot;iconfont&quot; title=&quot;左三角形&quot;&gt;&amp;#xe614;&lt;/i&gt; 上一页
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;1&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-item wui-paging-current&quot;&gt;2&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;3&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;4&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;5&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;6&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;7&lt;/a&gt;
+    &lt;span class=&quot;wui-paging-ellipsis&quot;&gt;...&lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;24&lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-next&quot;&gt;
+        下一页 &lt;i class=&quot;iconfont&quot; title=&quot;右三角形&quot;&gt;&amp;#xe615;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">增加功能的</h3>
+        <div class="demo-group">
+            <div class="wui-paging wui-paging-tac">
+                <span class="wui-paging-total">共 12489 条记录</span>
+                <span class="wui-paging-show">每页显示 <select name="" class="wui-paging-show-select">
+                    <option value="10">10</option>
+                    <option value="20">20</option>
+                    <option value="30">30</option>
+                </select> 条记录</span>
+                <a href="#" class="wui-paging-prev">
+                    <i class="iconfont" title="左三角形">&#xe614;</i> 上一页
+                </a>
+                <a href="#" class="wui-paging-item">1</a>
+                <a href="#" class="wui-paging-item wui-paging-current">2</a>
+                <a href="#" class="wui-paging-item">3</a>
+                <a href="#" class="wui-paging-item">4</a>
+                <a href="#" class="wui-paging-item">5</a>
+                <a href="#" class="wui-paging-item">6</a>
+                <a href="#" class="wui-paging-item">7</a>
+                <span class="wui-paging-ellipsis">...</span>
+                <a href="#" class="wui-paging-item">24</a>
+                <a href="#" class="wui-paging-next">
+                    下一页 <i class="iconfont" title="右三角形">&#xe615;</i>
+                </a>
+                <span class="wui-paging-info"><span class="wui-paging-bold">5 / 7</span>页</span>
+
+                <form class="wui-paging-which">
+                    <input class="wui-paging-num" value="" type="text">
+                    <input type="submit" class="wui-paging-info wui-paging-goto" value="跳转"/>
+                </form>
+            </div>
+            <br/>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 330px;">
+            &lt;div class=&quot;wui-paging wui-paging-tac&quot;&gt;
+                &lt;span class=&quot;wui-paging-total&quot;&gt;共 12489 条记录&lt;/span&gt;
+                &lt;span class=&quot;wui-paging-show&quot;&gt;每页显示 &lt;select name=&quot;&quot; class=&quot;wui-paging-show-select&quot;&gt;
+                    &lt;option value=&quot;10&quot;&gt;10&lt;/option&gt;
+                    &lt;option value=&quot;20&quot;&gt;20&lt;/option&gt;
+                    &lt;option value=&quot;30&quot;&gt;30&lt;/option&gt;
+                &lt;/select&gt; 条记录&lt;/span&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-prev&quot;&gt;
+                    &lt;i class=&quot;iconfont&quot; title=&quot;左三角形&quot;&gt;&amp;#xe614;&lt;/i&gt; 上一页
+                &lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;1&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-item wui-paging-current&quot;&gt;2&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;3&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;4&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;5&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;6&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;7&lt;/a&gt;
+                &lt;span class=&quot;wui-paging-ellipsis&quot;&gt;...&lt;/span&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-item&quot;&gt;24&lt;/a&gt;
+                &lt;a href=&quot;#&quot; class=&quot;wui-paging-next&quot;&gt;
+                    下一页 &lt;i class=&quot;iconfont&quot; title=&quot;右三角形&quot;&gt;&amp;#xe615;&lt;/i&gt;
+                &lt;/a&gt;
+                &lt;span class=&quot;wui-paging-info&quot;&gt;&lt;span class=&quot;wui-paging-bold&quot;&gt;5 / 7&lt;/span&gt;页&lt;/span&gt;
+
+                &lt;form class=&quot;wui-paging-which&quot;&gt;
+                    &lt;input class=&quot;wui-paging-num&quot; value=&quot;&quot; type=&quot;text&quot;&gt;
+                    &lt;input type=&quot;submit&quot; class=&quot;wui-paging-info wui-paging-goto&quot; value=&quot;跳转&quot;/&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">上一页，下一页的</h3>
+        <div class="demo-group">
+            <div class="wui-paging ">
+                <span class="wui-paging-info">第<span class="wui-paging-bold">1 / 7</span>页</span>
+                <span class="wui-paging-prev">
+                    <i class="iconfont" title="左三角形">&#xe614;</i> 上一页
+                </span>
+                <a href="#" class="wui-paging-next">
+                    下一页 <i class="iconfont" title="右三角形">&#xe615;</i>
+                </a>
+            </div>
+            <div class="wui-paging">
+                <span class="wui-paging-info">第<span class="wui-paging-bold">5 / 7</span>页</span>
+                <a href="#" class="wui-paging-prev">
+                    <i class="iconfont" title="左三角形">&#xe614;</i> 上一页
+                </a>
+                <a href="#" class="wui-paging-next">
+                    下一页 <i class="iconfont" title="右三角形">&#xe615;</i>
+                </a>
+            </div>
+            <div class="wui-paging">
+                <span class="wui-paging-info">第<span class="wui-paging-bold">7 / 7</span>页</span>
+                <a href="#" class="wui-paging-prev">
+                    <i class="iconfont" title="左三角形">&#xe614;</i> 上一页
+                </a>
+                <span class="wui-paging-next">
+                    下一页 <i class="iconfont" title="右三角形">&#xe615;</i>
+                </span>
+            </div>
+            <br/>
+            <textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 180px;">
+&lt;div class=&quot;wui-paging &quot;&gt;
+    &lt;span class=&quot;wui-paging-info&quot;&gt;&#31532;&lt;span class=&quot;wui-paging-bold&quot;&gt;1 / 7&lt;/span&gt;&#39029;&lt;/span&gt;
+    &lt;span class=&quot;wui-paging-prev&quot;&gt;
+        &lt;i class=&quot;iconfont&quot; title=&quot;&#24038;&#19977;&#35282;&#24418;&quot;&gt;&amp;#xe614;&lt;/i&gt; &#19978;&#19968;&#39029;
+    &lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-next&quot;&gt;
+        &#19979;&#19968;&#39029; &lt;i class=&quot;iconfont&quot; title=&quot;&#21491;&#19977;&#35282;&#24418;&quot;&gt;&amp;#xe615;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</textarea>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 180px;">
+&lt;div class=&quot;wui-paging&quot;&gt;
+    &lt;span class=&quot;wui-paging-info&quot;&gt;&#31532;&lt;span class=&quot;wui-paging-bold&quot;&gt;5 / 7&lt;/span&gt;&#39029;&lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-prev&quot;&gt;
+        &lt;i class=&quot;iconfont&quot; title=&quot;&#24038;&#19977;&#35282;&#24418;&quot;&gt;&amp;#xe614;&lt;/i&gt; &#19978;&#19968;&#39029;
+    &lt;/a&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-next&quot;&gt;
+        &#19979;&#19968;&#39029; &lt;i class=&quot;iconfont&quot; title=&quot;&#21491;&#19977;&#35282;&#24418;&quot;&gt;&amp;#xe615;&lt;/i&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+</textarea>
+<textarea class="wui-textarea wui-input-xxxl copy-to-shear-board" style="height: 180px;">
+&lt;div class=&quot;wui-paging&quot;&gt;
+    &lt;span class=&quot;wui-paging-info&quot;&gt;&#31532;&lt;span class=&quot;wui-paging-bold&quot;&gt;7 / 7&lt;/span&gt;&#39029;&lt;/span&gt;
+    &lt;a href=&quot;#&quot; class=&quot;wui-paging-prev&quot;&gt;
+        &lt;i class=&quot;iconfont&quot; title=&quot;&#24038;&#19977;&#35282;&#24418;&quot;&gt;&amp;#xe614;&lt;/i&gt; &#19978;&#19968;&#39029;
+    &lt;/a&gt;
+    &lt;span class=&quot;wui-paging-next&quot;&gt;
+        &#19979;&#19968;&#39029; &lt;i class=&quot;iconfont&quot; title=&quot;&#21491;&#19977;&#35282;&#24418;&quot;&gt;&amp;#xe615;&lt;/i&gt;
+    &lt;/span&gt;
+&lt;/div&gt;
+</textarea>
+        </div>
+    </div>
+    <br/><br/>
+    <div class="wui-module-dom">
+        <h3 class="demo-group-title">上一页，下一页的</h3>
+        <div class="demo-group">
+            <a href="/shakemoney/user_shake_detail?id=723301105836380160&amp;month=2016-11" class="wui-button wui-button-green">首页</a>
+            <a href="/shakemoney/device_shake_detail?id=662832089070047232&amp;month=2016-11&amp;pre=734826516692729856" class="wui-button wui-button-green">上一页</a>
+            <a href="/shakemoney/device_shake_detail?id=662832089070047232&amp;month=2016-11&amp;next=734826525471412224" class="wui-button wui-button-green">下一页</a>
+        </div>
+    </div>
+    <!--*******************************************************************************-->
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<!--Javascript引用-开始-->
+<script src="http://a.taobao.fm/lib/jquery/jquery-1.11.2.min.js"></script>
+<script src="../copy-to-shear-board.js"></script>
+<!--Javascript引用-结束-->
+</body>
+</html>

@@ -66,7 +66,11 @@
 .table-btn-group .wui-button{ margin-top: 2px;}
 
 
+/*.vertical-align-middle{}*/
+.wui-table .check-td{text-align: center;}
+.wui-table .check-td input{vertical-align: middle;cursor: pointer;}
 /*微调宽度*/
+.w-2{width: 2%;}
 .w-3{width: 3%;}
 .w-4{width: 4%;}
 .w-5{width: 5%;}
