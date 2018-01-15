@@ -43,7 +43,10 @@ pre,code,tt{font:12px 'andale mono', 'lucida console', monospace;line-height:1.5
 .mab20{margin-bottom: 20px;}
 .ma20{margin: 20px;}
 
-body{font-size: 12px;font-family: Arial, sans-serif; line-height: 1.5;color: #333333;}
+body{font-size: 12px; line-height: 1.5;color: #333333;}
+body{
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC" , "Hiragino Sans GB","Microsoft YaHei","微软雅黑","Open Sans", Arial, sans-serif;
+}
 /* Links */
 a {
     color: #459ae9;
@@ -51,7 +54,7 @@ a {
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 a:focus, a:hover, a:active {
   outline: 0;
