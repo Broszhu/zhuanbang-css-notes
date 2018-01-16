@@ -404,6 +404,54 @@
         </style>
     </section>
 
+    <!--聊天窗口-->
+    <section class="code-wrap clearfix">
+        <div class="css-live-wrap">
+            <summary> 
+                <strong>聊天窗口：</strong>
+                <span>带边框的聊天窗口</span>
+            </summary>
+            <div class="demo-wrap">
+                <div class="tooltips">
+                    <div class="arrow arrow-border"></div>
+                    <div class="arrow arrow-bg"></div>
+                </div>
+            </div>
+
+        </div>
+        <style class="code">
+            .tooltips{
+                position:relative;
+                width:300px;
+                height:80px;
+                line-height:60px;
+                background:#b0e46e;
+                border:1px solid #8dc161;
+                border-radius:4px;
+            }
+            .arrow{
+                position:absolute;
+                width: 0;
+                height:0;
+                line-height: 0;
+                border-width: 20px 15px 0;
+                border-style: solid dashed dashed dashed;
+                border-left-color: transparent;
+                border-right-color: transparent;
+            }
+            .arrow-border{
+                color: #8dc161;
+                bottom: -20px;
+                right: 50%;
+            }
+            .arrow-bg{
+                color: #b0e46e;
+                bottom: -19px;
+                right: 50%;
+            }
+        </style>
+    </section>
+
     <!-- 滚动条 -->
     <section class="code-wrap clearfix">
         <div class="css-live-wrap">
@@ -515,6 +563,450 @@
             }
         </style>
     </section>
+
+    <!--wifi-->
+    <section class="code-wrap clearfix">
+        <div class="css-live-wrap">
+            <summary> 
+                <strong>wifi：</strong>
+                <span>WIFI信息,类目控制wifi-1，wifi-2，wifi-3，wifi-4</span>
+            </summary>
+            <div class="demo-wrap">
+                <div class="wifi-box">
+                    <span class="wifi-icon strength-ready">
+                        <span class="wifi-1"></span>
+                        <span class="wifi-2"></span>
+                        <span class="wifi-3"></span>
+                        <span class="wifi-4"></span>
+                    </span>
+                    <span class="wifi-icon strength-ready strength-1">
+                        <span class="wifi-1"></span>
+                        <span class="wifi-2"></span>
+                        <span class="wifi-3"></span>
+                        <span class="wifi-4"></span>
+                    </span>
+                    <span class="wifi-icon strength-ready strength-2">
+                        <span class="wifi-1"></span>
+                        <span class="wifi-2"></span>
+                        <span class="wifi-3"></span>
+                        <span class="wifi-4"></span>
+                    </span>
+                    <span class="wifi-icon strength-ready strength-3">
+                        <span class="wifi-1"></span>
+                        <span class="wifi-2"></span>
+                        <span class="wifi-3"></span>
+                        <span class="wifi-4"></span>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <style class="code">
+            .strength-ready {
+                color: #26a69a;
+            }
+
+            /*已链接或曾连接过的颜色及信号强弱*/
+            .wifi-icon {
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+                margin: 0 auto;
+                float: left;
+            }
+
+            .wifi-icon > span {
+                display: block;
+                position: absolute;
+                border-radius: 50%;
+            }
+
+            .wifi-icon .wifi-1 {
+                width: 5px;
+                height: 5px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 1px;
+                /* 当前的颜色 */
+                background: currentcolor;
+            }
+
+            .wifi-icon .wifi-2, .wifi-icon .wifi-3, .wifi-icon .wifi-4 {
+                border: 2px solid;
+                border-color: currentcolor transparent transparent;
+            }
+
+            .wifi-icon .wifi-2 {
+                width: 12px;
+                height: 12px;
+                left: 4px;
+                bottom: -2px;
+            }
+
+            .wifi-icon .wifi-3 {
+                width: 20px;
+                height: 20px;
+                left: 0;
+                bottom: -6px;
+            }
+
+            .wifi-icon .wifi-4 {
+                width: 28px;
+                height: 28px;
+                left: -4px;
+                bottom: -10px;
+            }
+
+            .wifi-icon > span:after {
+                content: "";
+                display: block;
+                position: absolute;
+            }
+
+            .strength-1 .wifi-4,
+            .strength-2 .wifi-4,
+            .strength-2 .wifi-3,
+            .strength-3 .wifi-4,
+            .strength-3 .wifi-3,
+            .strength-3 .wifi-2 {
+                border-color: #b0bec5 transparent transparent;
+            }
+
+            /*demo样式*/
+            .wifi-box {
+                width: 400px;
+                margin: 0 auto;
+            }
+
+            .wifi-icon {
+                transform: scale(4);
+                margin: 40px;
+            }
+
+            .wifi-box *,
+            .wifi-box *::after,
+            .wifi-box *::before {
+                box-sizing: border-box;
+            }
+        </style>
+    </section>
+
+
+    <!--flex等分-->
+    <section class="code-wrap clearfix">
+        <div class="css-live-wrap">
+            <summary> 
+                <strong>flex等分：</strong>
+                <span>flex等分</span>
+            </summary>
+            <div class="demo-wrap">
+                <ul class="flex-equal demo-layout">
+                    <li>手机</li>
+                    <li>联系人</li>
+                    <li>信息</li>
+                    <li>主屏</li>
+                </ul>
+                <ul class="flex-equal demo-layout">
+                    <li>手机</li>
+                    <li>联系人</li>
+                    <li>信息</li>
+                </ul>
+                <ul class="flex-equal demo-layout">
+                    <li>手机</li>
+                    <li>联系人</li>
+                </ul>
+            </div>
+
+        </div>
+        <style class="code">
+            .demo-layout {
+                line-height: 44px;
+                margin-bottom: 20px;
+                text-align: center;
+                background-color: #0078e7;
+                color: #fff;
+            }
+
+            .demo-center {
+                border: 1px solid #ccc;
+                margin: 20px;
+                height: 200px;
+            }
+
+            .demo-center .children {
+                background: #0078e7;
+                color: #fff;
+                width: 150px;
+                line-height: 5;
+                text-align: center;
+            }
+
+            /* flex */
+            .flex-equal, .flex-center, .justify {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+            }
+
+            .flex-equal li {
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                -webkit-flex: 1;
+                flex: 1;
+            }
+        </style>
+    </section>
+
+
+    <!--table等分-->
+    <section class="code-wrap clearfix">
+        <div class="css-live-wrap">
+            <summary> 
+                <strong>table 等分：</strong>
+                <span>able 等分</span>
+            </summary>
+            <div class="demo-wrap">
+                <ul class="table-equal demo-layout">
+                    <li>手机</li>
+                    <li>联系人</li>
+                    <li>信息</li>
+                    <li>主屏</li>
+                </ul>
+                <ul class="table-equal demo-layout">
+                    <li>手机</li>
+                    <li>联系人</li>
+                    <li>信息</li>
+                </ul>
+            </div>
+
+        </div>
+        <style class="code">
+            /* table */
+            .table-equal {
+                display: table;
+                table-layout: fixed;
+                width: 100%;
+            }
+
+            .table-equal li {
+                display: table-cell;
+            }
+        </style>
+    </section>
+
+    <!--两端对齐-->
+    <section class="code-wrap clearfix">
+        <div class="css-live-wrap">
+            <summary> 
+                <strong>两端对齐：</strong>
+                <span>两端对齐</span>
+            </summary>
+            <div class="demo-wrap">
+                <div class="justify">
+                    <span>两端对齐1</span>
+                    <span>两端对齐2</span>
+                    <span>两端对齐3</span>
+                </div>
+                <br>
+                <div class="justify">
+                    <span>左边</span>
+                    <span>右边</span>
+                </div>
+            </div>
+
+        </div>
+        <style class="code">
+            .justify {
+                -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                padding: 0 10px;
+                background: #0078e7;
+                color: #fff;
+                line-height: 32px;
+            }
+        </style>
+    </section>
+
+    <!--loading-->
+    <section class="code-wrap clearfix">
+        <div class="css-live-wrap">
+            <summary> 
+                <strong>loading：</strong>
+                <span>loading效果，全屏loading被隐藏了</span>
+            </summary>
+            <div class="demo-wrap">
+                <div id="pageLoading" style="display: none;">
+                    <div class="spinner">
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
+                </div>
+                <div id="divLoading" style="display: block;">
+                    <div class="spinner">
+                        <div class="rect2"></div>
+                        <div class="rect3"></div>
+                        <div class="rect4"></div>
+                        <div class="rect5"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <style class="code">
+            /* 全局 loading */
+            #pageLoading {
+                background-color: #e6e6e6;
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10000
+            }
+
+            .spinner {
+                width: 100px;
+                height: 60px;
+                text-align: center;
+                font-size: 10px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -o-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+            }
+
+            .spinner > div {
+                background-color: #e81b1e;
+                height: 100%;
+                width: 6px;
+                display: inline-block;
+                margin: 0 5px;
+                -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+                animation: stretchdelay 1.2s infinite ease-in-out;
+            }
+
+            .spinner .rect2 {
+                -webkit-animation-delay: -1.1s;
+                animation-delay: -1.1s;
+            }
+
+            .spinner .rect3 {
+                -webkit-animation-delay: -1.0s;
+                animation-delay: -1.0s;
+            }
+
+            .spinner .rect4 {
+                -webkit-animation-delay: -0.9s;
+                animation-delay: -0.9s;
+            }
+
+            .spinner .rect5 {
+                -webkit-animation-delay: -0.8s;
+                animation-delay: -0.8s;
+            }
+
+            @-webkit-keyframes stretchdelay {
+                0%, 40%, 100% {
+                    -webkit-transform: scaleY(0.4)
+                }
+                20% {
+                    -webkit-transform: scaleY(1.0)
+                }
+            }
+
+            @keyframes stretchdelay {
+                0%, 40%, 100% {
+                    transform: scaleY(0.4);
+                    -webkit-transform: scaleY(0.4);
+                }
+                20% {
+                    transform: scaleY(1.0);
+                    -webkit-transform: scaleY(1.0);
+                }
+            }
+            /* 这个上小区域的loading */
+            #divLoading {
+                background-color: rgba(255, 255, 255, 0.8);
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0
+            }
+
+            #divLoading .spinner {
+                height: 30px;
+            }
+
+            #divLoading .spinner > div {
+                height: 100%;
+                width: 3px;
+                margin: 0 2px;
+
+            }
+        </style>
+    </section>
+
+    <!--loading-->
+    <section class="code-wrap clearfix">
+        <div class="css-live-wrap">
+            <summary> 
+                <strong>loading：</strong>
+                <span>里面可以旋转任何东西</span>
+            </summary>
+            <div class="demo-wrap">
+                <div class="center-wrap">
+                    <span class="loading" style="font-size: 60px;">♬</span>
+                </div>
+            </div>
+
+
+        </div>
+        <style class="code">
+            .center-wrap{
+                width: 100%;
+                text-align: center;
+                height: 40px;
+                line-height: 40px;
+                color: #808080;
+            }
+            .loading{
+                display: inline-block;
+                -webkit-animation: wui-icon-spin 3s infinite linear;
+                animation: wui-icon-spin 3s infinite linear;
+            }
+            @-webkit-keyframes wui-icon-spin {
+                to {
+                    transform: rotate(0deg);
+                }
+                form {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes wui-icon-spin {
+                0% {
+                    transform: rotate(0deg);
+                }
+                100% {
+                    transform: rotate(360deg);
+                }
+            }
+        </style>
+    </section>
+
+
 </div>
 
 </body>
